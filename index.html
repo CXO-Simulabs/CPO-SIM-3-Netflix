@@ -194,6 +194,13 @@ body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);li
 .learn-card .learn-example{background:var(--light);border-radius:10px;padding:16px;margin-top:14px;}
 .learn-card .learn-example h4{font-size:.82em;font-weight:700;color:var(--navy);margin-bottom:6px;}
 .learn-card .learn-example p{font-size:.85em;color:var(--muted);margin-bottom:0;font-style:italic;}
+.learn-card .learn-framework{background:#1a1a2e;border-radius:10px;padding:18px 20px;margin-top:14px;border-left:3px solid var(--accent);}
+.learn-card .learn-framework h4{font-size:.82em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.learn-card .learn-framework ol{list-style:none;padding:0;margin:0;counter-reset:fw;}
+.learn-card .learn-framework ol li{counter-increment:fw;font-size:.84em;color:rgba(255,255,255,.75);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5;}
+.learn-card .learn-framework ol li:last-child{border-bottom:none;}
+.learn-card .learn-framework ol li::before{content:counter(fw) ". ";color:var(--accent);font-weight:700;}
+.learn-card .learn-framework ol li span{color:rgba(255,255,255,.4);font-size:.9em;}
 .learn-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;}
 .learn-dots{display:flex;gap:8px;}
 .learn-dot{width:10px;height:10px;border-radius:50%;background:var(--border);transition:background .2s;}
@@ -355,6 +362,18 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>Netflix discovered users don't just want "more movies" — they want to quickly find something they'll enjoy. The job isn't browsing, it's deciding. This insight drove the recommendation engine.</p>
       </div>
+      <div class="learn-framework">
+        <h4>User Research Plan Template</h4>
+        <ol>
+          <li>Research Question <span>— What do we need to learn? Be specific. Not "do users like it?"</span></li>
+          <li>Method Selection <span>— Interviews (why), surveys (how many), usability tests (can they), analytics (do they)?</span></li>
+          <li>Participant Criteria <span>— Who to recruit? Active users, churned users, non-users? How many?</span></li>
+          <li>Discussion Guide <span>— Open-ended questions. No leading. "Tell me about..." not "Do you like..."</span></li>
+          <li>Analysis Framework <span>— How will you code findings? Themes, affinity maps, journey maps?</span></li>
+          <li>Insight to Action <span>— Each insight maps to a recommendation. No orphan findings.</span></li>
+          <li>Stakeholder Readout <span>— Present findings with video clips. Stories > statistics for buy-in.</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">1 of 4</span>
         <div class="learn-dots"><span class="learn-dot active"></span><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot"></span></div>
@@ -374,6 +393,18 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Netflix tests everything from thumbnail images to UI layouts. But they learned that optimising for clicks isn't the same as optimising for satisfaction — a clickbait thumbnail gets views but increases churn.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>A/B Test Design Template</h4>
+        <ol>
+          <li>Hypothesis <span>— "If we [change X], then [metric Y] will [increase/decrease] by [Z%] because [reason]."</span></li>
+          <li>Primary Metric <span>— One metric that defines success. Not five. ONE.</span></li>
+          <li>Guardrail Metrics <span>— What must NOT get worse? Revenue, retention, load time?</span></li>
+          <li>Sample Size & Duration <span>— Use a calculator. How many users? How many days for significance?</span></li>
+          <li>Segmentation Plan <span>— New vs returning? Mobile vs desktop? Geography? Plan segments upfront.</span></li>
+          <li>Success Criteria <span>— "We ship if primary metric improves by X% at 95% confidence."</span></li>
+          <li>Decision Protocol <span>— What if results are inconclusive? What if guardrails are hit?</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">2 of 4</span>
@@ -395,6 +426,17 @@ footer a{color:#556677;text-decoration:none;}
         <h4>Example</h4>
         <p>Netflix chose to invest billions in original content instead of relying on licensed shows. It was a massive bet — but it reduced supplier power and created a unique library no competitor could replicate.</p>
       </div>
+      <div class="learn-framework">
+        <h4>Strategy Canvas Template</h4>
+        <ol>
+          <li>Vision <span>— Where are we going? What does the world look like when we win?</span></li>
+          <li>Playing Field <span>— Which market, segment, or job are we competing in?</span></li>
+          <li>How to Win <span>— Cost leadership, differentiation, or niche focus? Pick one.</span></li>
+          <li>Key Capabilities <span>— What must we be world-class at to execute this strategy?</span></li>
+          <li>OKRs <span>— 3 objectives, 3 key results each. Quarterly. Measurable. Ambitious.</span></li>
+          <li>What We Won't Do <span>— Strategic clarity comes from what you say no to.</span></li>
+        </ol>
+      </div>
       <div class="learn-nav">
         <span class="learn-counter">3 of 4</span>
         <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot active"></span><span class="learn-dot"></span></div>
@@ -414,6 +456,17 @@ footer a{color:#556677;text-decoration:none;}
       <div class="learn-example">
         <h4>Example</h4>
         <p>Netflix killed its own profitable DVD business to go all-in on streaming — before anyone forced them to. They disrupted themselves. Should they now do the same with live content and gaming?</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Innovation Portfolio Framework</h4>
+        <ol>
+          <li>Core (70%) <span>— Incremental improvements to existing products. Low risk, predictable returns.</span></li>
+          <li>Adjacent (20%) <span>— New features or markets adjacent to current strengths. Medium risk.</span></li>
+          <li>Transformational (10%) <span>— Breakthrough bets that could redefine the category. High risk, high reward.</span></li>
+          <li>Kill Criteria <span>— For each bet: what evidence would make us stop? Set upfront.</span></li>
+          <li>Review Cadence <span>— Monthly for core, quarterly for adjacent, bi-annual for transformational.</span></li>
+          <li>Cannibalisation Test <span>— If we don't disrupt ourselves, who will? When?</span></li>
+        </ol>
       </div>
       <div class="learn-nav">
         <span class="learn-counter">4 of 4</span>
